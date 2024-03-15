@@ -10,6 +10,10 @@ Tools like GitHub Actions, GitLab CI and others make git scraping adaptable to d
 
 This template includes a sample workflow to demonstrate the core git scraping capabilities. Read on to learn how to customize it!
 
+## Changes Made to Scraper
+
+I modified the web scraper to instead get the headline of the latest video story on the Multimedia page. I did this by first changing the website url from the main page of the Daily Pennsylvanian to the Multimedia page. I then inspected which element the headline was (it was 'a.medium-link') and replaced the corresponding arguments in the initial web scraping method in order to get the headline.
+
 ## Overview
 
 The workflow defined in `.github/workflows/scrape.yaml` runs on a defined schedule to:
